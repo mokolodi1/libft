@@ -6,7 +6,7 @@
 #    By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/04 17:52:57 by tfleming          #+#    #+#              #
-#    Updated: 2014/11/04 23:06:17 by tfleming         ###   ########.fr        #
+#    Updated: 2014/11/05 22:20:28 by tfleming         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -21,7 +21,16 @@ COMPILED =		ft_islower.o \
 				ft_toupper.o \
 				ft_isdigit.o \
 				ft_isalpha.o \
-				ft_isalnum.o
+				ft_isalnum.o \
+				ft_isascii.o \
+				ft_isprint.o \
+				ft_strlen.o \
+				ft_strstr.o \
+				ft_memcmp.o \
+				ft_memset.o \
+				ft_bzero.o \
+				ft_putchar.o \
+				ft_atoi.o
 
 all: $(NAME)
 

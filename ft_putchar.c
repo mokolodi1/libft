@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 15:06:36 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/05 17:30:39 by tfleming         ###   ########.fr       */
+/*   Created: 2014/11/05 16:04:56 by tfleming          #+#    #+#             */
+/*   Updated: 2014/11/05 16:14:03 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"ft_lib_test.h"
+#include		"ft_lib.h"
 
-int				main(void)
+void			ft_putchar(char c)
 {
-/*	size_t	thingy;
-
-	thingy = 0 - 1;
-	printf("%zu\n", thingy);
-	return (0);*/
-	return (ft_test_all());
+	write(1, &c, 1);
 }

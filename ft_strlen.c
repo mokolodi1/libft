@@ -1,23 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 15:06:36 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/05 17:30:39 by tfleming         ###   ########.fr       */
+/*   Created: 2014/11/05 19:22:37 by tfleming          #+#    #+#             */
+/*   Updated: 2014/11/05 19:36:54 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"ft_lib_test.h"
+#include	"ft_lib.h"
 
-int				main(void)
+size_t		ft_strlen(char *str)
 {
-/*	size_t	thingy;
+	size_t	len;
 
-	thingy = 0 - 1;
-	printf("%zu\n", thingy);
-	return (0);*/
-	return (ft_test_all());
+	len = 0;
+	while (str[len] != '\0')
+	{
+		len++;
+	}
+	return (len);
 }

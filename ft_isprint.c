@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 15:06:36 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/05 17:30:39 by tfleming         ###   ########.fr       */
+/*   Created: 2014/11/05 19:38:52 by tfleming          #+#    #+#             */
+/*   Updated: 2014/11/05 19:51:10 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"ft_lib_test.h"
+#include		"ft_lib.h"
 
-int				main(void)
+int				ft_isprint(int c)
 {
-/*	size_t	thingy;
-
-	thingy = 0 - 1;
-	printf("%zu\n", thingy);
-	return (0);*/
-	return (ft_test_all());
+	return (c >= ' ' && c <= '~');
 }

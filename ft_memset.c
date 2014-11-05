@@ -1,23 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 15:06:36 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/05 17:30:39 by tfleming         ###   ########.fr       */
+/*   Created: 2014/11/05 12:08:22 by tfleming          #+#    #+#             */
+/*   Updated: 2014/11/05 14:44:23 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"ft_lib_test.h"
+#include		"ft_lib.h"
 
-int				main(void)
+void			*ft_memset(void *destination, int int_value, size_t len)
 {
-/*	size_t	thingy;
-
-	thingy = 0 - 1;
-	printf("%zu\n", thingy);
-	return (0);*/
-	return (ft_test_all());
+	size_t			i;
+	unsigned char	*location;
+	unsigned char	value;
+	
+	value = (unsigned char)int_value;
+	location = (unsigned char*)destination;
+	i = 0;
+	while (i < len)
+	{
+		location[i] = value;
+		i++;
+	}
+	return (destination);
 }

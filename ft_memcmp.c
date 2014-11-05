@@ -1,23 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 15:06:36 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/05 17:30:39 by tfleming         ###   ########.fr       */
+/*   Created: 2014/11/05 12:31:43 by tfleming          #+#    #+#             */
+/*   Updated: 2014/11/05 18:50:56 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"ft_lib_test.h"
+#include		"ft_lib.h"
 
-int				main(void)
+int				ft_memcmp(const void *first_void, const void *second_void
+							, size_t len)
 {
-/*	size_t	thingy;
+	size_t				i;
+	unsigned char		*first;
+	unsigned char		*second;
 
-	thingy = 0 - 1;
-	printf("%zu\n", thingy);
-	return (0);*/
-	return (ft_test_all());
+	first = (unsigned char*)first_void;
+	second = (unsigned char*)second_void;
+	i = 0;
+	while (i < len)
+	{
+		if (*(first + i) != *(second + i))
+			return (*(first + i) - *(second + i));
+		i++;
+	}
+	return (0);
 }
