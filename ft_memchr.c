@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 21:32:24 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/06 21:58:16 by tfleming         ###   ########.fr       */
+/*   Created: 2014/11/06 17:29:42 by tfleming          #+#    #+#             */
+/*   Updated: 2014/11/06 21:58:15 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include		"libft.h"
+#include		<stdio.h>//fix
 
-int				ft_isdigit(int c)
+void			*ft_memchr(const void *haystack, int needle, size_t len)
 {
-	return (c <= '9' && c >= '0');
+	size_t		i;
+
+	i = 0;
+	while (i < len)
+	{
+		if (needle == ((char*)haystack)[i])
+			return ((void*)haystack + i);
+		i++;
+	}
+	return (NULL);
 }

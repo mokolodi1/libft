@@ -6,11 +6,11 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 13:08:50 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/05 22:20:48 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/06 21:58:07 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"ft_lib_test.h"
+#include		"libft_test.h"
 
 int				ft_test_all(void)
 {
@@ -32,12 +32,20 @@ int				ft_test_all(void)
 
 	// memory
 	ft_memcmp_test_all();
+	ft_memcpy_test_all();
+	ft_memccpy_test_all();
+	ft_memmove_test_all();
 	ft_memset_test_all();
+	ft_memchr_test_all();
 	ft_bzero_test_all();
 
 	// strings
 	ft_strlen_test_all();
+	ft_strnlen_test_all();
 	ft_strstr_test_all();
+	ft_strcpy_test_all();
+	ft_strncpy_test_all();
+	ft_strdup_test_all();
 
 	// other
 	ft_atoi_test_all();

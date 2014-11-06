@@ -6,11 +6,11 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 22:11:12 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/05 23:04:19 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/06 21:58:11 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"ft_lib_test.h"
+#include		"libft_test.h"
 
 static void		ft_atoi_test(char *input);
 

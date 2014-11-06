@@ -6,11 +6,11 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 16:04:56 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/05 16:14:03 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/06 21:58:14 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"ft_lib.h"
+#include		"libft.h"
 
 void			ft_putchar(char c)
 {

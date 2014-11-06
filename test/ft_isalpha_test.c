@@ -6,11 +6,11 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 21:49:26 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/04 22:21:02 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/06 21:58:11 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"ft_lib_test.h"
+#include		"libft_test.h"
 
 #define			METHOD			ft_isalpha
 #define			METHOD_TEST		ft_isalpha_test

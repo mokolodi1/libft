@@ -1,70 +1,63 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen_test.c                                   :+:      :+:    :+:   */
+/*   ft_strdup_test.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/05 19:23:40 by tfleming          #+#    #+#             */
+/*   Created: 2014/11/06 18:59:31 by tfleming          #+#    #+#             */
 /*   Updated: 2014/11/06 21:58:08 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include		"libft_test.h"
 
-static int		ft_strlen_test(char *str);
-static int		big();
+void			ft_strdup_test(char *source);
+static void		big();
 
-int				ft_strlen_test_all(void)
+int				ft_strdup_test_all()
 {
-	printf("ft_strlen:");
-	ft_strlen_test("");
-	ft_strlen_test(" ");
-	ft_strlen_test("\0");
-	ft_strlen_test("\200");
-	ft_strlen_test("a");
-	ft_strlen_test("asdfasdf");
-	ft_strlen_test("Hello World!");
+	printf("ft_strdup:");
+	ft_strdup_test("");
+	ft_strdup_test("a");
+	ft_strdup_test("\0");
+	ft_strdup_test("\200");
+	ft_strdup_test("Hello World!");
 	big();
 	printf("\n");
 	return (0);
 }
 
-static int		big()
+static void		big()
 {
-	char 	*stuff = malloc(sizeof(char) * MAX_ARRAY_THING);
-	size_t	i;
+	size_t	i = 0;
+	char	*stuff = malloc(sizeof(char) * MAX_ARRAY_THING);
 
-	i = 0;
 	while (i < MAX_ARRAY_THING)
 	{
 		stuff[i] = 'a';
 		i++;
 	}
+	stuff[MAX_ARRAY_THING - 2] = 'b';
 	stuff[MAX_ARRAY_THING - 1] = '\0';
-	if (strlen(stuff) == ft_strlen(stuff))
-	{
-		printf(".");
-		return (1);
-	}
-	else
-	{
-		printf("[ft_strlen(I BROKE IT)]");
-		return (0);
-	}
+	ft_strdup_test(stuff);
+	free(stuff);
 }
 
-static int		ft_strlen_test(char *str)
+void			ft_strdup_test(char *source)
 {
-	if (strlen(str) == ft_strlen(str))
-	{
+	void	*ft;
+	void	*theirs;
+
+	ft = ft_strdup(source);
+	theirs = strdup(source);
+	if (!strcmp(ft, theirs))
 		printf(".");
-		return (1);
-	}
 	else
 	{
-		printf("[ft_strlen(%s)]", str);
-		return (0);
+		if (strlen(source) > 200)
+			printf("[ft_strdup(%s)]", source);
+		else
+			printf("[ft_strdup(!big!)]");
 	}
 }
-

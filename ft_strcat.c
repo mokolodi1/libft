@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 21:32:24 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/06 21:58:16 by tfleming         ###   ########.fr       */
+/*   Created: 2014/11/06 21:24:36 by tfleming          #+#    #+#             */
+/*   Updated: 2014/11/06 22:01:21 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"libft.h"
+#include "libft.h"
 
-int				ft_isdigit(int c)
+char		*ft_strcat(char *first, const char *second)
 {
-	return (c <= '9' && c >= '0');
+	char	*end;
+	size_t	i;
+
+	end = ft_strstr(first, "");//change to strchr
+	i = 0;
+	while (second[i] && end[i])
+	{
+		first[i] = end[i];
+		i++;
+	}
+	return (first);
 }

@@ -6,12 +6,11 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/08/31 15:28:00 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/05 23:07:04 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/06 21:58:17 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"ft_lib.h"
-#include		<stdio.h>	// fix
+#include "libft.h"
 
 int				ft_atoi(const char *str)
 {

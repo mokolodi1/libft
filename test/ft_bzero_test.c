@@ -6,11 +6,11 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 18:56:15 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/05 19:11:50 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/06 21:58:11 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"ft_lib_test.h"
+#include		"libft_test.h"
 
 static int		ft_bzero_test(size_t len, int more);
 

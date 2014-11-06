@@ -6,11 +6,11 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 20:58:51 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/05 21:40:51 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/06 21:58:08 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"ft_lib_test.h"
+#include		"libft_test.h"
 
 static int		big();
 static int		ft_strstr_test(const char *s1, const char *s2);

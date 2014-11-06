@@ -6,7 +6,7 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 12:34:27 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/05 22:27:32 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/06 21:40:27 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,11 @@
 ** memory
 */
 int				ft_memcmp(const void *original, const void *new, size_t len);
+void			*ft_memcpy(void *dest, const void *source, size_t len);
+void			*ft_memccpy(void *dest, const void *source, int c, size_t len);
+void			*ft_memmove(void *dest, const void *source, size_t len);
 void			*ft_memset(void *b, int c, size_t len);
+void			*ft_memchr(const void *haystack, int needle, size_t len);
 void			ft_bzero(void *string, size_t len);
 
 /*
@@ -44,8 +48,14 @@ int				ft_isprint(int c);
 /*
 ** string
 */
-size_t			ft_strlen(char *str);
+size_t			ft_strlen(const char *str);
+size_t			ft_strnlen(const char *str, size_t max);
 char			*ft_strstr(const char *str, const char *to_find);
+char			*ft_strcpy(char *dest, const char *src);
+char			*ft_strncpy(char *dest, const char *src, size_t max);
+char			*ft_strdup(const char *source);
+char			*ft_strcat(char *first, const char *second);
+char			*ft_strncat(char *first, const char *second, size_t len);
 
 /*
 ** printing

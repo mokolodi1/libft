@@ -6,11 +6,11 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/09/03 12:04:43 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/05 21:40:31 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/06 21:58:12 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"ft_lib.h"
+#include		"libft.h"
 
 char			*ft_strstr(const char *haystack, const char *needle)
 {

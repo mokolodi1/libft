@@ -6,20 +6,18 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 19:22:37 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/05 19:36:54 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/06 21:58:13 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"ft_lib.h"
+#include	"libft.h"
 
-size_t		ft_strlen(char *str)
+size_t		ft_strlen(const char *str)
 {
 	size_t	len;
 
 	len = 0;
 	while (str[len] != '\0')
-	{
 		len++;
-	}
 	return (len);
 }

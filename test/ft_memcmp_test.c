@@ -6,11 +6,11 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 12:34:36 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/05 18:49:07 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/06 21:58:09 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"ft_lib_test.h"
+#include		"libft_test.h"
 
 static int		ft_memcmp_test_general();
 static int		ft_memcmp_upper_values();
@@ -57,6 +57,8 @@ static int		ft_memcmp_large(char add_first, char add_second)
 		second[i] = i % 26 + add_second;
 		i++;
 	}
+	free(first);
+	free(second);
 	return (ft_memcmp_test(first, second, large));
 }
 

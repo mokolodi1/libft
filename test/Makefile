@@ -6,7 +6,7 @@
 #    By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/04 16:46:58 by tfleming          #+#    #+#              #
-#    Updated: 2014/11/05 22:20:26 by tfleming         ###   ########.fr        #
+#    Updated: 2014/11/06 20:32:05 by tfleming         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -30,9 +30,17 @@ TEST_COMPILED =	main.o \
 				ft_isascii_test.o \
 				ft_isprint_test.o \
 				ft_strlen_test.o \
+				ft_strnlen_test.o \
 				ft_strstr_test.o \
+				ft_strcpy_test.o \
+				ft_strncpy_test.o \
+				ft_strdup_test.o \
 				ft_memcmp_test.o \
+				ft_memcpy_test.o \
+				ft_memccpy_test.o \
+				ft_memmove_test.o \
 				ft_memset_test.o \
+				ft_memchr_test.o \
 				ft_bzero_test.o \
 				ft_atoi_test.o
 

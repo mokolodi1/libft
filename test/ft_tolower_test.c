@@ -6,11 +6,11 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 12:44:14 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/04 21:34:51 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/06 21:58:07 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"ft_lib_test.h"
+#include		"libft_test.h"
 
 #define			METHOD			ft_tolower
 #define			METHOD_TEST		ft_tolower_test

@@ -6,11 +6,11 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 22:05:59 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/04 22:06:48 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/06 21:58:10 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"ft_lib_test.h"
+#include		"libft_test.h"
 
 #define			METHOD			ft_isupper
 #define			METHOD_TEST		ft_isupper_test

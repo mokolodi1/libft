@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_strnlen.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 21:32:24 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/06 21:58:16 by tfleming         ###   ########.fr       */
+/*   Created: 2014/11/06 19:12:30 by tfleming          #+#    #+#             */
+/*   Updated: 2014/11/06 21:58:12 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"libft.h"
+#include	"libft.h"
 
-int				ft_isdigit(int c)
+size_t		ft_strnlen(const char *string, size_t max)
 {
-	return (c <= '9' && c >= '0');
+	size_t	len;
+
+	len = 0;
+	while (string[len] != '\0' && len < max)
+		len++;
+	return (len);
 }

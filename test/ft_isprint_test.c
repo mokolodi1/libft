@@ -6,11 +6,11 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 19:41:06 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/05 19:49:30 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/06 21:58:10 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"ft_lib_test.h"
+#include		"libft_test.h"
 
 static int		ft_isprint_test(int c);
 

@@ -6,11 +6,11 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 12:11:30 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/05 19:05:45 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/06 21:58:09 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"ft_lib_test.h"
+#include		"libft_test.h"
 
 static void		ft_memset_test_general();
 static int		ft_memset_test(int value, size_t len);
@@ -40,11 +40,15 @@ static int		ft_memset_test_upper_values()
 	if (memcmp(ft, theirs, 1))
 	{
 		printf("[ft_memset(%s, %i, %i)]", "asdf", 200, 1);
+		free(ft);
+		free(theirs);
 		return (1);
 	}
 	else
 	{
 		printf(".");
+		free(ft);
+		free(theirs);
 		return (0);
 	}
 }
@@ -89,11 +93,15 @@ static int		ft_memset_test_touches_other(int value, size_t len)
 			printf("[ft_memset(!big_string!, %i, %zu)]", value, len);
 		else
 			printf("[ft_memset(stuff, %i, %zu)]", value, len);
+		free(ft);
+		free(theirs);
 		return (1);
 	}
 	else
 	{
 		printf(".");
+		free(ft);
+		free(theirs);
 		return (0);
 	}
 }
@@ -113,11 +121,15 @@ static int		ft_memset_test(int value, size_t len)
 			printf("[ft_memset(!big_string!, %i, %zu)]", value, len);
 		else
 			printf("[ft_memset(stuff, %i, %zu)]", value, len);
+		free(ft);
+		free(theirs);
 		return (1);
 	}
 	else
 	{
 		printf(".");
+		free(ft);
+		free(theirs);
 		return (0);
 	}
 }
