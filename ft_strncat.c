@@ -6,7 +6,7 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 21:35:06 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/06 22:01:35 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/07 11:40:01 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ char		*ft_strncat(char *first, const char *second, size_t len)
 	char	*end;
 	size_t	i;
 
-	end = ft_strstr(first, "");//change to strcat
+	end = ft_strchr(first, '\0');
 	i = 0;
-	while (second[i] && end[i] && i < len)
+	while (second[i] && i < len)
 	{
-		first[i] = end[i];
+		end[i] = second[i];
 		i++;
 	}
 	return (first);

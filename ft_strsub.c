@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_strsub.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/05 19:13:05 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/07 15:01:01 by tfleming         ###   ########.fr       */
+/*   Created: 2014/11/08 11:52:27 by tfleming          #+#    #+#             */
+/*   Updated: 2014/11/08 12:02:33 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int				ft_isascii(int c)
+char			*ft_strsub(char const *source, size_t start, size_t len)
 {
-	return (c <= 127 && c >= 0);
+	char		*substring;
+
+	substring = malloc(sizeof(char) * (len + 1));
+	if (!substring)
+		return (NULL);
+	ft_strncpy(substring, source + (start * sizeof(char)), len);
+	return (substring);
 }

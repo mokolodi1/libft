@@ -1,18 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/05 19:13:05 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/07 15:01:01 by tfleming         ###   ########.fr       */
+/*   Created: 2014/11/08 11:42:42 by tfleming          #+#    #+#             */
+/*   Updated: 2014/11/08 11:51:38 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int				ft_isascii(int c)
+char			*ft_strmapi(char const *string
+							, char (*func)(unsigned int, char))
 {
-	return (c <= 127 && c >= 0);
+	char			*new;
+	unsigned int	i;
+
+	new = malloc(sizeof(char) * ft_strlen(string));
+	i = 0;
+	while (string[i])
+	{
+		new[i] = func(i, string[i]);
+		i++;
+	}
+	return (new);
 }

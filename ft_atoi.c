@@ -6,37 +6,44 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/08/31 15:28:00 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/06 21:58:17 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/09 20:54:19 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int				ft_atoi(const char *str)
+static int		numbers_part(const char *str, long long number, int negative)
 {
-	long long	number;
-	int			negative;
-	size_t		i;
-
-	negative = 0;
-	i = 0;
-	if (str[i] == '-')
+	while (*str <= '9' && *str >= '0')
 	{
-		negative = 1;
-		i++;
-	}
-	while (str[i] == '0')
-		i++;
-	number = 0;
-	while (str[i] <= '9' && str[i] >= '0')
-	{
-		number *= 10;
-		number += str[i] - '0';
-		i++;
+		number = number * 10 + *str - '0';
+		str++;
 		if (number < 0)
+		{
+			if (negative == 1)
+				return (0);
 			return (-1);
+		}
 	}
 	if (negative)
 		number = -number;
 	return (number);
+}
+
+int				ft_atoi(const char *str)
+{
+	long long	number;
+	int			negative;
+
+	negative = 0;
+	while (ft_isspace(*str))
+		str++;
+	if (*str == '-' && str++)
+		negative = 1;
+	else if (*str == '+')
+		str++;
+	while (*str == '0')
+		str++;
+	number = 0;
+	return (numbers_part(str, number, negative));
 }

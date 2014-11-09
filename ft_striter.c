@@ -1,18 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_striter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/05 19:13:05 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/07 15:01:01 by tfleming         ###   ########.fr       */
+/*   Created: 2014/11/07 15:50:40 by tfleming          #+#    #+#             */
+/*   Updated: 2014/11/07 15:59:31 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int				ft_isascii(int c)
+void			ft_striter(char *string, void (*func)(char *))
 {
-	return (c <= 127 && c >= 0);
+	while (*string)
+	{
+		func(string);
+		string++;
+	}
 }

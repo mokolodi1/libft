@@ -6,12 +6,11 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 17:29:42 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/06 21:58:15 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/07 15:01:38 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"libft.h"
-#include		<stdio.h>//fix
+#include "libft.h"
 
 void			*ft_memchr(const void *haystack, int needle, size_t len)
 {

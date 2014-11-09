@@ -1,18 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/05 19:13:05 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/07 15:01:01 by tfleming         ###   ########.fr       */
+/*   Created: 2014/11/08 12:29:58 by tfleming          #+#    #+#             */
+/*   Updated: 2014/11/08 17:50:35 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int				ft_isascii(int c)
+char			*ft_strjoin(char const *first, char const *second)
 {
-	return (c <= 127 && c >= 0);
+	char	*both;
+	size_t	first_len;
+	size_t	second_len;
+
+	first_len = ft_strlen(first);
+	second_len = ft_strlen(second);
+	both = malloc(sizeof(char) * (first_len + 1 + second_len));
+	if (!both)
+		return (NULL);
+	ft_strncpy(both, first, first_len);
+	ft_strcpy(both + first_len, second);
+	return (both);
 }

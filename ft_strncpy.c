@@ -6,7 +6,7 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 20:10:50 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/06 21:58:13 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/08 12:10:10 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,3 @@ char		*ft_strncpy(char *dest, const char *src, size_t max)
 	}
 	return (dest);
 }
-

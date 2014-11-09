@@ -6,11 +6,11 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 19:12:30 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/06 21:58:12 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/09 19:00:47 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"libft.h"
+#include "libft.h"
 
 size_t		ft_strnlen(const char *string, size_t max)
 {

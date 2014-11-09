@@ -6,26 +6,21 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 12:31:43 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/06 21:58:15 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/09 19:13:42 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"libft.h"
+#include "libft.h"
 
-int				ft_memcmp(const void *first_void, const void *second_void
-							, size_t len)
+int				ft_memcmp(const void *s1, const void *s2, size_t len)
 {
 	size_t				i;
-	unsigned char		*first;
-	unsigned char		*second;
 
-	first = (unsigned char*)first_void;
-	second = (unsigned char*)second_void;
 	i = 0;
 	while (i < len)
 	{
-		if (*(first + i) != *(second + i))
-			return (*(first + i) - *(second + i));
+		if (*((char*)s1 + i) != *((char*)s2 + i))
+			return (*((unsigned char*)s1 + i) - *((unsigned char*)s2 + i));
 		i++;
 	}
 	return (0);

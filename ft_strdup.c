@@ -6,11 +6,11 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 18:56:43 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/06 21:58:13 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/07 15:01:38 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"libft.h"
+#include "libft.h"
 
 char			*ft_strdup(const char *source)
 {
