@@ -6,7 +6,7 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 12:34:27 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/10 15:31:56 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/10 15:37:59 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-# include <string.h>
 
 /*
 ** memory
