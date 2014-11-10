@@ -6,7 +6,7 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 11:52:27 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/08 12:02:33 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/10 13:58:48 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char			*ft_strsub(char const *source, size_t start, size_t len)
 {
 	char		*substring;
 
-	substring = malloc(sizeof(char) * (len + 1));
+	substring = ft_strnew(len);
 	if (!substring)
 		return (NULL);
 	ft_strncpy(substring, source + (start * sizeof(char)), len);

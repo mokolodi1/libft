@@ -6,20 +6,20 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 12:34:27 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/08 19:24:44 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/10 15:29:54 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef			FT_LIB_H
-# define		FT_LIB_H
+#ifndef FT_LIB_H
+# define FT_LIB_H
 
 /*
-** Included for NULL, size_t
+** included for NULL, size_t
 */
 
-# include		<stdlib.h>
-# include		<unistd.h>
-# include		<string.h>
+# include <stdlib.h>
+# include <unistd.h>
+# include <string.h>
 
 /*
 ** memory
@@ -82,14 +82,14 @@ char			*ft_strjoin(char const *first, char const *second);
 char			*ft_strtrim(char const *string);
 char			**ft_strsplit(char const *string, char c);
 char			*ft_itoa(int number);
-void			 ft_putchar(char c);
-void			 ft_putstr(char const *source);
-void			 ft_putendl(char const *source);
-void			 ft_putnbr(int number);
-void			 ft_putchar_fd(char c, int file_descriptor);
-void			 ft_putstr_fd(char const *source, int file_descriptor);
-void			 ft_putendl_fd(char const *source, int file_descriptor);
-void			 ft_putnbr_fd(int number, int file_descriptor);
+void			ft_putchar(char c);
+void			ft_putstr(char const *source);
+void			ft_putendl(char const *source);
+void			ft_putnbr(int number);
+void			ft_putchar_fd(char c, int file_descriptor);
+void			ft_putstr_fd(char const *source, int file_descriptor);
+void			ft_putendl_fd(char const *source, int file_descriptor);
+void			ft_putnbr_fd(int number, int file_descriptor);
 
 /*
 ** printing
