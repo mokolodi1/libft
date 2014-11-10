@@ -6,12 +6,12 @@
 /*   By: tfleming <tfleming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 12:34:27 by tfleming          #+#    #+#             */
-/*   Updated: 2014/11/10 15:29:54 by tfleming         ###   ########.fr       */
+/*   Updated: 2014/11/10 15:31:56 by tfleming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_LIB_H
-# define FT_LIB_H
+#ifndef LIBFT_H
+# define LIBFT_H
 
 /*
 ** included for NULL, size_t
